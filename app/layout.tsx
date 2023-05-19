@@ -1,3 +1,5 @@
+"use client";
+
 import { TheHeader } from "@/components/TheHeader";
 import "./globals.css";
 import { Metadata } from "next";

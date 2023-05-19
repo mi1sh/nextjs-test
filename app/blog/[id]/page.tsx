@@ -1,3 +1,4 @@
+import { FaAngleLeft } from "react-icons/fa";
 import { Metadata } from "next";
 
 async function getData(id: string) {
@@ -36,6 +37,20 @@ export default async function Post({ params: { id } }: Props) {
     <>
       <h1>{post.title}</h1>
       <p>{post.body}</p>
+      <a
+        style={{
+          display: "block",
+          padding: 6,
+          margin: "auto",
+          marginTop: 30,
+          maxWidth: 80,
+          border: "1px solid",
+        }}
+        href="/blog/"
+      >
+        <FaAngleLeft />
+        Back
+      </a>
     </>
   );
 }
